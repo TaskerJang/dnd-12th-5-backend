@@ -23,7 +23,7 @@ Picktory는 선물의 의미를 유지하면서도 상대방의 선호도를 자
 - 선물의 의미를 유지하면서도 효과적인 선물 선택 가능
 
 
-### Backend
+
 # Tech Stack
 
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
