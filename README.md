@@ -1,105 +1,145 @@
-# 📚 팀 협업 가이드
+# Picktory (픽토리)
 
-## 🌿 브랜치 전략
+![image](https://github.com/user-attachments/assets/9df49597-0c85-4a32-998f-b517e0859fe2)
 
-### 메인 브랜치
-- `main`: 제품 배포를 위한 기준 브랜치
 
-### 브랜치 명명 규칙
-- 형식: `feature/[기능명]`
-- 예시: `feature/선물꾸미기`, `feature/로그인개선`
+## 💡 Service Introduction
 
-## 🤝 PR (Pull Request) 프로세스
+Picktory는 선물의 의미를 유지하면서도 상대방의 선호도를 자연스럽게 알 수 있는 서비스입니다. 선물 고르기의 어려움을 해소하고, 준비 과정에서의 정성과 고민을 함께 전달할 수 있습니다.
 
-### PR 규칙
-1. **직접 Push 금지**
-    - 모든 코드 변경사항은 PR을 통해 진행해야 함
+### Background
+![image](https://github.com/user-attachments/assets/848bc2e9-8723-4f9d-865e-f0103531d461)
 
-2. **PR 공유**
-    - PR 생성 시 팀 톡방에 공유 필수
+많은 사람들이 선물을 준비하는 과정에서 어려움을 느끼고 있습니다. 125명의 설문 응답을 통해, 사람들이 상대방의 선호도를 직접 물어보지 못하는 이유가 '선물의 감성이 사라지고 성의가 없어 보일까봐'라는 것을 발견했습니다.
 
-3. **코드 리뷰**
-    - 2일 이내에 2명의 코드 리뷰 승인 필수
-    - 리뷰어의 피드백을 반영하여 코드 품질 향상
+### Solution
+![image](https://github.com/user-attachments/assets/37180c27-5929-4b2c-b12a-169089f06dee)
 
-### PR 템플릿
-```markdown
-# Pull Request
+- 선물 후보들을 함께 공유하며 상대방의 의견을 자연스럽게 수집
+- 선물 준비 과정의 고민을 함께 전달하여 정성을 표현
+- 선물의 의미를 유지하면서도 효과적인 선물 선택 가능
 
-## 🔗 연관된 기능
-- 구현 기능: [기능명]
+## 🛠 Tech Stack
 
-## 📝 작업 내용
-<!-- 이번 PR에서 작업한 내용을 상세히 설명해주세요 -->
-- 구현 내용:
-  - 
-- 변경 사항:
-  - 
-- 스크린샷/영상:
-  <!-- 시각적인 변경사항이 있는 경우 첨부해주세요 -->
+### Backend
+![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white)
+![Spring Security](https://img.shields.io/badge/Spring_Security-6DB33F?style=for-the-badge&logo=springsecurity&logoColor=white)
+![Spring Data JPA](https://img.shields.io/badge/Spring_Data_JPA-6DB33F?style=for-the-badge&logo=spring&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white)
 
-## ✅ 테스트 결과
-<!-- 아래 항목들을 체크하고 결과를 공유해주세요 -->
-- [ ] 로컬 테스트 완료
-- [ ] 단위 테스트 통과
-- [ ] E2E 테스트 통과 (해당되는 경우)
 
-### 테스트 상세 내용
-- 테스트 환경:
-- 테스트 결과:
-  - 
-- 테스트 증빙:
-  <!-- 스크린샷이나 로그를 첨부해주세요 -->
+## 🔍 System Architecture
 
-## 🚨 주의사항
-<!-- 배포 시 또는 리뷰 시 특별히 주의해야 할 사항을 작성해주세요 -->
-- 
+### Frontend Architecture
+![image](https://github.com/user-attachments/assets/f19c2cda-e56a-4862-8cfd-203143cdd2dd)
 
-## 🙏 리뷰 요청사항
-<!-- 리뷰어가 특별히 확인해주었으면 하는 부분을 작성해주세요 -->
-- 리뷰 포인트:
-  - 
-- 논의가 필요한 부분:
-  - 
+### Backend Architecture
+![image](https://github.com/user-attachments/assets/fe12fcce-9b47-485c-9940-71a0aa1eac62)
+
+
+## 🌟 개발 이력
+
+### [SWAGGER 설정](https://github.com/dnd-side-project/dnd-12th-5-backend/pull/3)
+```gradle
+implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.3.0'
 ```
+- API 문서화를 위한 SwaggerConfig 클래스 생성
+- Context path를 `/api/v1`로 설정
+- Swagger UI path: `/swagger-ui.html`
+- API docs path: `/v3/api-docs`
 
-## 📝 커밋 컨벤션
-
-### 커밋 메시지 구조
+### [QueryDSL 설정](https://github.com/dnd-side-project/dnd-12th-5-backend/pull/4)
+```gradle
+implementation 'com.querydsl:querydsl-jpa:5.0.0:jakarta'
+annotationProcessor "com.querydsl:querydsl-apt:5.0.0:jakarta"
 ```
-[<타입>]: <작업내용>
-<상세설명>
-```
+- JPAQueryFactory Bean 등록
+- Q클래스 자동 생성 설정
+- Entity 변경 시 clean & rebuild 필요
 
-### 커밋 메시지 규칙
-- 형식: `[<타입>]: <작업내용>`
-- 제목 길이: 최대 50글자
-- 예시: `[feat]: 선물 포장 기능 추가`
+### [Spring Security 설정](https://github.com/dnd-side-project/dnd-12th-5-backend/pull/5)
+- JWT 인증 필터 구현
+- API 엔드포인트별 접근 권한 설정
+- CORS 설정
+  - 프론트엔드 도메인 설정 이후 보안 강화 예정
+  - HTTP 메소드: GET, POST, PUT, DELETE, PATCH, OPTIONS
 
-### 커밋 타입
-| 타입 | 설명 |
-|------|-------------|
-| `build` | 빌드 관련 파일 수정 |
-| `ci` | CI 관련 파일 수정 |
-| `docs` | 문서 파일 수정 |
-| `feat` | 새로운 기능 구현 |
-| `fix` | 버그 해결 |
-| `perf` | 성능 개선 |
-| `refactor` | 코드 리팩터링 |
-| `remove` | 파일 삭제 |
-| `rename` | 파일/폴더 이름 변경 또는 이동 |
-| `style` | 코드 스타일 변경 |
-| `test` | 테스트 코드 관련 |
+## Authentication
 
-### 작업내용 작성 규칙
-- 한글로 작성
-- 간결하고 명확한 내용
-- 명령형으로 작성
-- 현재 시제 사용
-- 문장 형식 지양
+### [JWT 구현](https://github.com/dnd-side-project/dnd-12th-5-backend/pull/7)
+- 토큰 유효성 검증 로직
+- 만료 토큰 재발급 기능
 
-### 상세설명 (선택사항)
-- 한글로 작성
-- 변경 사항에 대한 상세 설명
-- 변경 이유 및 변경 전과의 비교 내용
+### [카카오 OAuth 로그인](https://github.com/dnd-side-project/dnd-12th-5-backend/pull/8)
+- OAuth 인증 플로우:
+  1. 인증 코드로 카카오 액세스 토큰 발급
+  2. 카카오 사용자 정보 조회
+  3. JWT 토큰 발급
+- 회원 관리 기능:
+  - 회원가입/로그인 통합 프로세스
+  - 내 정보 조회
+  - 로그아웃
+  - 회원 탈퇴 (카카오 연동 해제 포함)
 
+### [카카오 로그인 테스트](https://github.com/dnd-side-project/dnd-12th-5-backend/pull/9)
+- DatabaseCleaner 구현
+- JUnit 5 BeforeEachCallback 활용
+- SecurityContextHolder를 활용한 인증 테스트
+
+## Core Features
+
+### [배달부 캐릭터 선택](https://github.com/dnd-side-project/dnd-12th-5-backend/pull/24)
+- 배달부 캐릭터 설정 API
+- 고유 링크 생성 통합
+- Bundle 상태 관리 개선:
+  1. DRAFT (초기)
+  2. PUBLISHED (배달부 설정 & 링크 생성)
+
+### [보따리 조회](https://github.com/dnd-side-project/dnd-12th-5-backend/pull/28)
+- QueryDSL 기반 데이터 조회
+- 선물, 이미지, 응답 정보 통합 조회
+- Response 엔티티 구현
+- QueryDSL 기반 커스텀 구현체
+
+### [보따리 답변](https://github.com/dnd-side-project/dnd-12th-5-backend/pull/35)
+- GiftResponseTag 관리 체계
+- 다중 선물 답변 처리
+- 상태 검증:
+  - 번들 상태
+  - 선물 목록
+  - 기존 응답 여부
+  - 응답 완료 여부
+
+### [보따리 개별 조회](https://github.com/dnd-side-project/dnd-12th-5-backend/pull/44)
+- 개별 선물 상세 정보 조회
+- 썸네일 및 이미지 목록 분리
+- 권한 검증 및 예외 처리
+
+### [보따리 마저 채우기](https://github.com/dnd-side-project/dnd-12th-5-backend/pull/45)
+- DRAFT 상태 보따리 조회
+- N+1 문제 해결을 위한 벌크 조회
+- 이미지 처리:
+  - 썸네일 분리
+  - 이미지 목록 매핑
+
+## Enhancements & Fixes
+
+### [보따리 디자인 타입](https://github.com/dnd-side-project/dnd-12th-5-backend/pull/47)
+- design_type 필드 추가
+- 배달부 SVG 변경을 위한 색상 정보 제공
+
+### [썸네일 로직 통일](https://github.com/dnd-side-project/dnd-12th-5-backend/pull/56)
+- 첫 번째 이미지를 썸네일로 사용
+- 이미지 URL 처리 방식 통일
+- API 응답 형식 일관성 확보
+
+### [보따리 ID 추가](https://github.com/dnd-side-project/dnd-12th-5-backend/pull/57)
+- 보따리 조회 API 응답에 ID 포함
+- 답변 저장 API 연동 개선
+
+## 📝 License
+![image](https://github.com/user-attachments/assets/399c254a-db65-4af5-84b8-5a33bab807a2)
+
+This project is licensed under the terms of the MIT license.
