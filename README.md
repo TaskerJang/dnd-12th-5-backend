@@ -1,7 +1,10 @@
-# Picktory (픽토리)
+# Picktory
 
 ![image](https://github.com/user-attachments/assets/9df49597-0c85-4a32-998f-b517e0859fe2)
 
+# 🌐 Service URL
+
+### 📍 [www.picktory.net](https://www.picktory.net/)
 
 ## 💡 Service Introduction
 
@@ -22,12 +25,18 @@ Picktory는 선물의 의미를 유지하면서도 상대방의 선호도를 자
 ## 🛠 Tech Stack
 
 ### Backend
+# Tech Stack
+
+![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
 ![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white)
 ![Spring Security](https://img.shields.io/badge/Spring_Security-6DB33F?style=for-the-badge&logo=springsecurity&logoColor=white)
 ![Spring Data JPA](https://img.shields.io/badge/Spring_Data_JPA-6DB33F?style=for-the-badge&logo=spring&logoColor=white)
+![Hibernate](https://img.shields.io/badge/Hibernate-59666C?style=for-the-badge&logo=hibernate&logoColor=white)
 ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
-![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white)
-![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white)
+![JWT](https://img.shields.io/badge/JWT-black?style=for-the-badge&logo=JSON%20web%20tokens)
+![REST API](https://img.shields.io/badge/REST_API-02569B?style=for-the-badge&logo=rest&logoColor=white)
+![QueryDSL](https://img.shields.io/badge/QueryDSL-0769AD?style=for-the-badge&logo=query&logoColor=white)
+![Jira](https://img.shields.io/badge/Jira-0052CC?style=for-the-badge&logo=jira&logoColor=white)
 
 
 ## 🔍 System Architecture
@@ -139,7 +148,9 @@ annotationProcessor "com.querydsl:querydsl-apt:5.0.0:jakarta"
 - 보따리 조회 API 응답에 ID 포함
 - 답변 저장 API 연동 개선
 
-## 📝 License
+
 ![image](https://github.com/user-attachments/assets/399c254a-db65-4af5-84b8-5a33bab807a2)
+
+## 📝 License
 
 This project is licensed under the terms of the MIT license.
