@@ -49,14 +49,6 @@ Picktory는 선물의 의미를 유지하면서도 상대방의 선호도를 자
 
 ## 🌟 개발 이력
 
-<div align="center">
-
-[![Total PR Count](https://img.shields.io/badge/PRs-12+-blue?style=for-the-badge)](https://github.com/dnd-side-project/dnd-12th-5-backend/pulls)
-[![Lines of Code](https://img.shields.io/badge/Total_Code-2.5k_lines-brightgreen?style=for-the-badge)](https://github.com/dnd-side-project/dnd-12th-5-backend)
-
-</div>
-
-
 ### 1.1. Swagger 초기 설정 [![PR #3](https://img.shields.io/badge/-%233_Swagger_설정-31A8FF?style=for-the-badge)](https://github.com/dnd-side-project/dnd-12th-5-backend/pull/3)
 
 ```gradle
