@@ -49,7 +49,7 @@ Picktory는 선물의 의미를 유지하면서도 상대방의 선호도를 자
 
 ## 🌟 개발 이력
 
-### 1.1. Swagger 초기 설정 [![PR #3](https://img.shields.io/badge/-%233_Swagger_설정-31A8FF?style=for-the-badge)](https://github.com/dnd-side-project/dnd-12th-5-backend/pull/3)
+### 1.1. Swagger 초기 설정 => [![PR #3](https://img.shields.io/badge/-%233_Swagger_설정-31A8FF?style=for-the-badge)](https://github.com/dnd-side-project/dnd-12th-5-backend/pull/3)
 
 ```gradle
 implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.3.0'
@@ -61,7 +61,7 @@ implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.3.0'
 - 📝 Swagger UI path: `/swagger-ui.html`
 - 📚 API docs path: `/v3/api-docs`
 
-### 1.2. QueryDSL 환경 구성 [![PR #4](https://img.shields.io/badge/-%234_QueryDSL_설정-31A8FF?style=for-the-badge)](https://github.com/dnd-side-project/dnd-12th-5-backend/pull/4)
+### 1.2. QueryDSL 환경 구성 => [![PR #4](https://img.shields.io/badge/-%234_QueryDSL_설정-31A8FF?style=for-the-badge)](https://github.com/dnd-side-project/dnd-12th-5-backend/pull/4)
 
 ```gradle
 implementation 'com.querydsl:querydsl-jpa:5.0.0:jakarta'
@@ -73,7 +73,7 @@ annotationProcessor "com.querydsl:querydsl-apt:5.0.0:jakarta"
 - 🔄 Q클래스 자동 생성 설정
 - 📝 Entity 변경 시 clean & rebuild 필요
 
-### 1.3. Spring Security 기본 설정 [![PR #5](https://img.shields.io/badge/-%235_Security_설정-31A8FF?style=for-the-badge)](https://github.com/dnd-side-project/dnd-12th-5-backend/pull/5)
+### 1.3. Spring Security 기본 설정 => [![PR #5](https://img.shields.io/badge/-%235_Security_설정-31A8FF?style=for-the-badge)](https://github.com/dnd-side-project/dnd-12th-5-backend/pull/5)
 
 **구현 내용**
 - 🔐 JWT 인증 필터 구현
@@ -84,13 +84,13 @@ annotationProcessor "com.querydsl:querydsl-apt:5.0.0:jakarta"
 
 ## 2. Authentication
 
-### 2.1. JWT 토큰 관리 시스템 구현 [![PR #7](https://img.shields.io/badge/-%237_JWT_구현-31A8FF?style=for-the-badge)](https://github.com/dnd-side-project/dnd-12th-5-backend/pull/7)
+### 2.1. JWT 토큰 관리 시스템 구현 => [![PR #7](https://img.shields.io/badge/-%237_JWT_구현-31A8FF?style=for-the-badge)](https://github.com/dnd-side-project/dnd-12th-5-backend/pull/7)
 
 **구현 내용**
 - ✅ 토큰 유효성 검증 로직
 - 🔄 만료 토큰 재발급 기능
 
-### 2.2. 카카오 OAuth 인증 시스템 구축 [![PR #8](https://img.shields.io/badge/-%238_카카오_로그인-31A8FF?style=for-the-badge)](https://github.com/dnd-side-project/dnd-12th-5-backend/pull/8)
+### 2.2. 카카오 OAuth 인증 시스템 구축 => [![PR #8](https://img.shields.io/badge/-%238_카카오_로그인-31A8FF?style=for-the-badge)](https://github.com/dnd-side-project/dnd-12th-5-backend/pull/8)
 
 **OAuth 인증 플로우**
 1. 🎫 인증 코드로 카카오 액세스 토큰 발급
@@ -103,7 +103,7 @@ annotationProcessor "com.querydsl:querydsl-apt:5.0.0:jakarta"
 - 🚪 로그아웃
 - ❌ 회원 탈퇴 (카카오 연동 해제 포함)
 
-### 2.3. 카카오 로그인 테스트 환경 구축 [![PR #9](https://img.shields.io/badge/-%239_카카오_테스트-31A8FF?style=for-the-badge)](https://github.com/dnd-side-project/dnd-12th-5-backend/pull/9)
+### 2.3. 카카오 로그인 테스트 환경 구축 => [![PR #9](https://img.shields.io/badge/-%239_카카오_테스트-31A8FF?style=for-the-badge)](https://github.com/dnd-side-project/dnd-12th-5-backend/pull/9)
 
 **구현 내용**
 - 🧹 DatabaseCleaner 구현
@@ -112,7 +112,7 @@ annotationProcessor "com.querydsl:querydsl-apt:5.0.0:jakarta"
 
 ## 3. Core Features
 
-### 3.1. 배달부 캐릭터 선택 시스템 [![PR #24](https://img.shields.io/badge/-%2324_캐릭터_선택-31A8FF?style=for-the-badge)](https://github.com/dnd-side-project/dnd-12th-5-backend/pull/24)
+### 3.1. 배달부 캐릭터 선택 시스템 => [![PR #24](https://img.shields.io/badge/-%2324_캐릭터_선택-31A8FF?style=for-the-badge)](https://github.com/dnd-side-project/dnd-12th-5-backend/pull/24)
 
 **구현 내용**
 - 🎨 배달부 캐릭터 설정 API
@@ -121,7 +121,7 @@ annotationProcessor "com.querydsl:querydsl-apt:5.0.0:jakarta"
   1. `DRAFT` (초기)
   2. `PUBLISHED` (배달부 설정 & 링크 생성)
 
-### 3.2. 보따리 통합 조회 기능 [![PR #28](https://img.shields.io/badge/-%2328_보따리_조회-31A8FF?style=for-the-badge)](https://github.com/dnd-side-project/dnd-12th-5-backend/pull/28)
+### 3.2. 보따리 통합 조회 기능 => [![PR #28](https://img.shields.io/badge/-%2328_보따리_조회-31A8FF?style=for-the-badge)](https://github.com/dnd-side-project/dnd-12th-5-backend/pull/28)
 
 **구현 내용**
 - 🔍 QueryDSL 기반 데이터 조회
@@ -129,7 +129,7 @@ annotationProcessor "com.querydsl:querydsl-apt:5.0.0:jakarta"
 - ✨ Response 엔티티 구현
 - 🛠️ QueryDSL 기반 커스텀 구현체
 
-### 3.3. 보따리 답변 시스템 구현 [![PR #35](https://img.shields.io/badge/-%2335_보따리_답변-31A8FF?style=for-the-badge)](https://github.com/dnd-side-project/dnd-12th-5-backend/pull/35)
+### 3.3. 보따리 답변 시스템 구현 => [![PR #35](https://img.shields.io/badge/-%2335_보따리_답변-31A8FF?style=for-the-badge)](https://github.com/dnd-side-project/dnd-12th-5-backend/pull/35)
 
 **구현 내용**
 - 🏷️ GiftResponseTag 관리 체계
@@ -140,14 +140,14 @@ annotationProcessor "com.querydsl:querydsl-apt:5.0.0:jakarta"
   - 기존 응답 여부
   - 응답 완료 여부
 
-### 3.4. 보따리 상세 조회 기능 [![PR #44](https://img.shields.io/badge/-%2344_개별_조회-31A8FF?style=for-the-badge)](https://github.com/dnd-side-project/dnd-12th-5-backend/pull/44)
+### 3.4. 보따리 상세 조회 기능 => [![PR #44](https://img.shields.io/badge/-%2344_개별_조회-31A8FF?style=for-the-badge)](https://github.com/dnd-side-project/dnd-12th-5-backend/pull/44)
 
 **구현 내용**
 - 🎁 개별 선물 상세 정보 조회
 - 🖼️ 썸네일 및 이미지 목록 분리
 - 🔒 권한 검증 및 예외 처리
 
-### 3.5. 보따리 작성 완료 기능 [![PR #45](https://img.shields.io/badge/-%2345_마저_채우기-31A8FF?style=for-the-badge)](https://github.com/dnd-side-project/dnd-12th-5-backend/pull/45)
+### 3.5. 보따리 작성 완료 기능 => [![PR #45](https://img.shields.io/badge/-%2345_마저_채우기-31A8FF?style=for-the-badge)](https://github.com/dnd-side-project/dnd-12th-5-backend/pull/45)
 
 **구현 내용**
 - 📝 DRAFT 상태 보따리 조회
@@ -158,20 +158,20 @@ annotationProcessor "com.querydsl:querydsl-apt:5.0.0:jakarta"
 
 ## 4. Enhancements & Fixes
 
-### 4.1. 보따리 디자인 시스템 개선 [![PR #47](https://img.shields.io/badge/-%2347_디자인_타입-31A8FF?style=for-the-badge)](https://github.com/dnd-side-project/dnd-12th-5-backend/pull/47)
+### 4.1. 보따리 디자인 시스템 개선 => [![PR #47](https://img.shields.io/badge/-%2347_디자인_타입-31A8FF?style=for-the-badge)](https://github.com/dnd-side-project/dnd-12th-5-backend/pull/47)
 
 **구현 내용**
 - 🎨 design_type 필드 추가
 - 🖌️ 배달부 SVG 변경을 위한 색상 정보 제공
 
-### 4.2. 이미지 처리 로직 개선 [![PR #56](https://img.shields.io/badge/-%2356_썸네일_로직-31A8FF?style=for-the-badge)](https://github.com/dnd-side-project/dnd-12th-5-backend/pull/56)
+### 4.2. 이미지 처리 로직 개선 => [![PR #56](https://img.shields.io/badge/-%2356_썸네일_로직-31A8FF?style=for-the-badge)](https://github.com/dnd-side-project/dnd-12th-5-backend/pull/56)
 
 **구현 내용**
 - 🏞️ 첫 번째 이미지를 썸네일로 사용
 - 🔄 이미지 URL 처리 방식 통일
 - 📝 API 응답 형식 일관성 확보
 
-### 4.3. 보따리 식별자 시스템 개선 [![PR #57](https://img.shields.io/badge/-%2357_보따리_ID-31A8FF?style=for-the-badge)](https://github.com/dnd-side-project/dnd-12th-5-backend/pull/57)
+### 4.3. 보따리 식별자 시스템 개선 => [![PR #57](https://img.shields.io/badge/-%2357_보따리_ID-31A8FF?style=for-the-badge)](https://github.com/dnd-side-project/dnd-12th-5-backend/pull/57)
 
 **구현 내용**
 - 🆔 보따리 조회 API 응답에 ID 포함
