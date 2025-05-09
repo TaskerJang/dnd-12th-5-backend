@@ -436,4 +436,4 @@ annotationProcessor "com.querydsl:querydsl-apt:5.0.0:jakarta"
 
 ## 🔍 감사합니다.
 
-<img src="https://github.com/user-attachments/assets/399c254a-db65-4af5-84b8-5a33bab807a2" alt="User Flow" width="800px" />
+<img src="src/image/image6.jpeg" alt="User Flow" width="800px" />
